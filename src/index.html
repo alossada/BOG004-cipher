@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shh... Caesar Cipher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <div class="header">
+    <h1 class="header__title">Todos tenemos algo que ocultar</h1>
+    <p class="header__text">Shh...</p>
+  </div>
+
+  <div class="section">
+    <div class="section__content">
+      <p class="section__text section__text--regular">Tu número clave:
+        <input class="section__number" type="number" min="1" id="keyNumber" placeholder="  # clave"/>
+      </p>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+    <textarea class="section__textbox" id="secretText" placeholder=" Escribre tu secreto o enigma"></textarea>
+
+    <p class="section__text section__text--regular">¿Quieres cifrar o decifrar?</p>
+    <button type="button" class="section__button" id="btnCode">Cifrar</button>
+    <button type="button" class="section__button" id="btnDecode">Descifrar</button>
+
+
+    <p class="section__text section__text--big">Tu secreto</p>
+    <textarea class="section__textbox" id="finalText" disabled></textarea>
+
+  </div>
+
+
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
