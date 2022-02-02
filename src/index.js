@@ -3,6 +3,7 @@ import cipher from './cipher.js';
 const btnCode = document.getElementById("btnCode");
 const btnDecode = document.getElementById("btnDecode");
 let offset = document.getElementById("keyNumber");
+
 //let text = document.getElementById("secretText");
 
 btnCode.addEventListener("click", () => {
@@ -10,7 +11,7 @@ btnCode.addEventListener("click", () => {
   let offsetValue = offset.value;
   let text = document.getElementById("secretText").value;
   document.getElementById("finalText").value = cipher.encode(offsetValue,text);
-  console.log('el resuultado: ', cipher.encode(offsetValue,text))
+ 
 
 })
 
@@ -19,5 +20,5 @@ btnDecode.addEventListener("click", () => {
     let offsetValue = offset.value;
     let text = document.getElementById("secretText").value;
     document.getElementById("finalText").value = cipher.decode(offsetValue,text);
-
+    
 })
