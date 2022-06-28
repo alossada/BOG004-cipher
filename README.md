@@ -59,5 +59,5 @@ La interfaz permite al usuario:
 * Insertar un mensaje (texto) a descifrar.
 * Ver el resultado del mensaje descifrado.
 
-![Interfaz](img\interfaz.png)
+![Interfaz](img/interfaz.png)
 
